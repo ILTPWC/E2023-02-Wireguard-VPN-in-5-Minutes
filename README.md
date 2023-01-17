@@ -5,9 +5,10 @@ Please keep in mind that WireGuard is peer-to-peer by design and the simple conf
 # Quick Start
 
 1. Install Wireguard on your System on Debian based systems you can use apt-get install wireguard
-2. Create a configuration file for the server and your client
-3. Start the tunnel for example with systemctl start wg-quick@wg0 on both systems
-4. Check if the tunnel is working with wg show
+2. generate prrivate/public key pairs on both systems with wg genkey | tee privatekey | wg pubkey > publickey
+3. Create a configuration file for the server and your client
+4. Start the tunnel for example with systemctl start wg-quick@wg0 on both systems
+5. Check if the tunnel is working with wg show
 
 
 ## Call to action
